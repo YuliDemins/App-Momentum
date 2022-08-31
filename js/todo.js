@@ -21,8 +21,8 @@ function displayMessages() {
     todoList.forEach((item, index) => {
         displayMessage += `
         <li class="todo__list-item">
-        <input type='checkbox' id='item_${index}' ${item.checked ? 'checked': ''}>
-        <label for='item_${index}' class="${item.important ? 'important' : ''}">${item.todo}</label>
+        <input type='checkbox' class="check-box" id='item_${index}' ${item.checked ? 'checked': ''}>
+        <label for='item_${index}' class="check-style">${item.todo}</label>
         <button class="todo__container-remove">-</button>
         </li>
         `;

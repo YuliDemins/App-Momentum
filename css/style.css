@@ -906,7 +906,11 @@ background:#ccae19;
 
 }
 
-
+.todo__list-item > label {
+    max-width: 200px;
+    height: auto;
+    /* word-break: break-all; */
+}
 
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
@@ -949,37 +953,36 @@ position: relative;
     background:#ccae19;
 }
 
-input[type=checkbox] {
+.check-box {
     opacity: 0;
-    position: absolute;  
+    position: absolute; 
+
 }
 
-label{
+.check-style{
    width: 194px;
-   overflow: hidden; 
- 
-
+   overflow: hidden;
 }
 
-label:before {
+.check-style:before {
     display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;
     justify-content: flex-start;
-    flex: 0 0 10px
+    flex: 0 0 10px;
+   
 }
 
   
-  input[type=checkbox], label {
+.check-box, .check-style {
     display: flex;
     vertical-align: middle;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 5px 10px 0px;
     cursor: pointer;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
   
-  input[type=checkbox] + label:before {
+.check-box + .check-style:before {
     content: '';
     border-radius: 5px;
     display: inline-block;
@@ -988,22 +991,20 @@ label:before {
     margin-right: 10px;
     text-align: center;
     border: 1px solid #b2b2b2;
-
 }
   
-  input[type=checkbox]:checked + label:before {
+.check-box:checked + .check-style:before {
     content: "";
     display: inline-block;
-    width: 1px;
-    height: 5px;
-    border: 1px solid #ccae19;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    border-radius: 0;
-    margin: 0 15px 5px 5px;
-    
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background:#ccae19;;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
   }
 
   ._activeblock {
