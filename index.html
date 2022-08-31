@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <header class="header">
+        <div class="player _activeblock">
+          <div class="current">
+            <div class="current-audio"></div>
+            <div class="current-time">
+              <span class="current-time-run"></span>
+              <span>/</span>
+              <span class="current-time-show"></span>
+            </div>
+          </div>
+            <audio src=""></audio>
+            <div class="audio-track">
+                <div class="audiotime"></div>
+            </div>
+          <div class="player-controls">
+            <div class="play-btn">
+              <button class="play-prev player-icon"></button>
+              <button class="play player-icon"></button>
+              <button class="play-next player-icon"></button>
+            </div>
+
+            <div class="volume">
+              <div class="volume-icon"></div>
+              <div class="volume-mute"></div>
+              <input type="range" class="volume-line _change-volume styled-slider slider-progress">
+          </div>
+
+          </div>
+          <ul class="play-list"></ul>
+        </div>
+
+        <div class="todo">
+          <div class="todo__container  _activeblock">
+            <h3 class="todo__title">ToDoList</h3>
+              <div class="todo__form">
+              <input class="todo__input" type="text">
+              <button class="todo__btn-add">+</button>
+            </div>
+            <ul class="todo__list"></ul>
+          </div>
+        </div>
+
+        <div class="weather _activeblock">
+            <input type="text" class="city" placeholder="Enter city"/>
+          <i class="weather-icon owf"></i>
+          <div class="weather-error"></div>
+          <div class="description-container">
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+          </div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider-icons">
+          <button class="slide-prev slider-icon"></button>
+          <button class="slide-next slider-icon"></button>
+        </div>
+        <time class="time _activeblock"></time>
+        <date class="date _activeblock"></date>
+        <div class="greeting-container _activeblock">
+          <span class="greeting"></span>
+          <input type="text" class="name" placeholder="[Enter name]"/>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class='settings'>
+
+          <h3 class='settings__title'></h3>
+
+          <div class="setting" id="time">
+            <div class="setting__text">Time</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="setting" id="date">
+            <div class="setting__text">Date</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="setting" id="greeting">
+            <div class="setting__text">Greeting</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+          
+          <div class="setting" id="audioplayer">
+            <div class="setting__text">Audioplayer</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="setting" id="weather">
+            <div class="setting__text">Weather</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="setting" id="quote">
+            <div class="setting__text">Quote</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="setting" id="todo">
+            <div class="setting__text">ToDoList</div>
+            <div class="setting__btn _switch-on"></div>  
+          </div>
+
+          <div class="lang">
+            <div class="setting__text">Language</div>
+            <div class="select">
+              <select class="select-lang">
+              <option class="select-lang__item" value='en' selected>eng</option>
+              <option class="select-lang__item" value='ru'>рус</option>
+            </select>
+          </div>
+ 
+          </div> 
+        </div>
+        <div class='settings__img'></div>
+
+        <div class='quotes _activeblock'>
+            <button class="change-quote"></button>
+            <div>
+              <div class="quote"></div>
+              <div class="author"></div>
+            </div>
+        </div>
+
+        <div class="icons">
+          <div class="icon-copy">	&copy;2022</div>
+          <div class="icon-github"><a href="https://github.com/YuliDemins/"><img src="assets/svg/github.svg" alt=""></a></div>
+          <div class="icon-rss"><a href="https://rs.school/js/"><img src="assets/svg/rs_school.svg" alt=""></a></div>
+          
+        </div>
+        
+      </footer>
+      
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/player.js"></script>
+    <script type="module" src="js/playList.js"></script>
+    <script type="module" src="js/settings.js"></script>
+    <script type="module" src="js/quotes.js"></script>
+    <script type="module" src="js/todo.js"></script>
+    <script type="module" src="js/grade.js"></script>
+</body>
+</html>
